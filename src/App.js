@@ -1,10 +1,22 @@
-import "./styles.css";
-
+import Chart from "./components/echarts/chart";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import moment from "moment";
 export default function App() {
+  const [options, setOptions] = useState({});
+  useEffect(() => {
+    // 使用异步请求
+    const test = async () => {
+      console.log(moment());
+      const rs = await axios(
+        "https://cycx.cnki.net/apinew/houtai/regionbase/list?level=2"
+      );
+    };
+    test();
+  }, []);
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Chart options={options} />
     </div>
   );
 }
