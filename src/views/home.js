@@ -1,5 +1,6 @@
 import Chart from "../components/echarts/chart";
 import { useState, useEffect } from "react";
+import { routes } from "../router";
 const dataSource = {
   0: {
     title: {
