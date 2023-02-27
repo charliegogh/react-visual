@@ -1,11 +1,8 @@
-import { createRoot } from "react-dom/client";
-import Router from "./router";
-import { BrowserRouter } from "react-router-dom";
+import { createRoot } from 'react-dom/client'
+import App from './layout'
 import './styles/index.less'
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const rootElement = document.getElementById('root')
+const root = createRoot(rootElement)
 root.render(
-  <BrowserRouter>
-    <Router />
-  </BrowserRouter>
-);
+  <App/>
+)
