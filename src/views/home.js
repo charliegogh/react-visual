@@ -1,6 +1,5 @@
 import Chart from "../components/echarts/chart";
-import { useState, useEffect } from "react";
-import { routes } from "../router";
+import { useEffect } from "react";
 const dataSource = {
   0: {
     title: {
@@ -15,7 +14,7 @@ const dataSource = {
     },
     series: [
       {
-        data: [150, 230, 224, 218, 135, 147, 1],
+        data: [150, 230, 224, 218, 135, 147, 10],
         type: "line"
       }
     ]
