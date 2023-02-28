@@ -50,7 +50,7 @@ const writeStatsJson = argv.indexOf('--stats') !== -1
 const config = configFactory('production')
 
 // 生产环境关闭map文件输出
-config.devtool = false
+// config.devtool = false
 
 // We require that you explicitly set browsers and do not fall back to
 // browserslist defaults.
